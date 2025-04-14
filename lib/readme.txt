@@ -1,0 +1,1 @@
+*borrowed* from MinGW-W64-builds-5.0.0
