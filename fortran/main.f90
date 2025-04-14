@@ -1,25 +1,38 @@
 
 program fib
 
-  implicit none
+    use iso_fortran_env
 
-  integer :: i, seq
-  integer, allocatable :: arr(:)
-  character :: e
+    implicit none
 
-  print *, 'Enter the length of Fibonacci sequence : '
-  read(*,*) seq
-  allocate(arr(seq))
 
-  arr(1) = 0
-  arr(2) = 1
 
-  do i = 3, seq
-    arr(i) = arr(i - 1) + arr(i - 2)
-  end do
+    integer :: i, seq_length
 
-  print *, arr
+    integer(kind = int64) :: x
+    integer(kind = int64), allocatable :: arr(:)
 
-  deallocate(arr)
+    write(*, '(A)', advance='no') "Enter the length of Fibonacci sequence : "
+    read(*,*) seq_length
+
+    allocate(arr(seq_length))
+
+    arr(1) = 0
+    arr(2) = 1
+
+    do i = 3, seq_length
+        arr(i) = arr(i - 1) + arr(i - 2)
+
+        if (arr(i) < 0) then
+            write(*, '(A, I0, A)') "Next number is too big (largest possible number (int64) is ", huge(x), ")"
+            write(*, '(A, I0)') "Length of the computed sequence : ", i - 1
+
+            exit
+        end if
+
+        write(*, '(" ", I0)') arr(i)
+    end do
+
+    deallocate(arr)
 
 end program fib

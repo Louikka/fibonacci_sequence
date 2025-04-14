@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="fortran_fib" />
+		<Option title="fib" />
 		<Option pch_mode="2" />
 		<Option compiler="gfortran" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/fortran_fib" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/fib" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gfortran" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/fortran_fib" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/fib" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gfortran" />
