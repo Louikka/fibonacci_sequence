@@ -1,1 +1,1 @@
-*borrowed* from MinGW-W64-builds-5.0.0
+Libraries *borrowed* from MinGW build (https://github.com/niXman/mingw-builds-binaries/releases)
