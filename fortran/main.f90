@@ -8,7 +8,6 @@ program fib
 
 
     integer :: i, seq_length
-
     integer(kind = int64) :: x
     integer(kind = int64), allocatable :: arr(:)
 
@@ -18,7 +17,10 @@ program fib
     allocate(arr(seq_length))
 
     arr(1) = 0
+    write(*, '(" ", I0)') arr(1)
+
     arr(2) = 1
+    write(*, '(" ", I0)') arr(2)
 
     do i = 3, seq_length
         arr(i) = arr(i - 1) + arr(i - 2)
@@ -34,5 +36,9 @@ program fib
     end do
 
     deallocate(arr)
+
+    print *, ""
+    print *, "Tap ENTER to exit.."
+    read (*,*)
 
 end program fib
