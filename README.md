@@ -1,5 +1,5 @@
-# Program(s?) for calculating the Fibonacci sequence.
+# Programs for calculating the Fibonacci sequence.
 
-Currently written only in **Fortran** (maybe later add some others).
+Currently written in Fortran and C.
 
 Compiled in Windows.
