@@ -1,17 +1,20 @@
 #include <stdio.h>
 
+#define hu_int unsigned short int
+#define llu_int unsigned long long int
+
 
 int main()
 {
-    unsigned short int n;
+    hu_int n;
     printf("Enter the length of Fibonacci sequence : ");
     scanf("%hu", &n);
 
-    unsigned long long int a = 0;
-    unsigned long long int b = 1;
-    unsigned long long int c;
+    llu_int a = 0;
+    llu_int b = 1;
+    llu_int c;
 
-    for (unsigned short int i = 0; i < n; i++) {
+    for (hu_int i = 0; i < n; i++) {
         if (i < 2) {
             printf("%hu\n", i);
             continue;
