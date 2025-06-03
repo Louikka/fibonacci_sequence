@@ -1,3 +1,7 @@
-# Programs for calculating the Fibonacci sequence.
 
-Currently written in Fortran and C.
+Programs for calculating the Fibonacci sequence.
+----------
+
+Currently written in :
+- Fortran
+- C
