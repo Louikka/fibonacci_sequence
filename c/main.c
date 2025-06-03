@@ -3,44 +3,37 @@
 
 int main()
 {
-    int n;
+    unsigned short int n;
     printf("Enter the length of Fibonacci sequence : ");
-    scanf("%d", &n);
+    scanf("%hu", &n);
 
-    int a = 0;
-    int b = 1;
-    int c;
+    unsigned long long int a = 0;
+    unsigned long long int b = 1;
+    unsigned long long int c;
 
-    for (int i = 0; i < n; i++) {
-
+    for (unsigned short int i = 0; i < n; i++) {
         if (i < 2) {
-
-            printf("%d\n", i);
+            printf("%hu\n", i);
             continue;
-
         }
 
         c = a + b;
-
-        if (c < 0) {
-
-            printf("Next number is too big\n");
-            n = i;
-            break;
-
-        }
-
-        printf("%d\n", c);
-
         a = b;
         b = c;
 
+        if (c < a) {
+            printf("Next number is too big\n");
+            n = i;
+            break;
+        }
+
+        printf("%llu\n", c);
     }
 
-    printf("Length of the computed sequence : %d\n\n", n);
+    printf("Length of the computed sequence : %hu\n\n", n);
 
     printf("Enter 756412347556 to exit..\n");
-    scanf("%d", &n);
+    scanf("%hu", &n);
 
     return 0;
 }
