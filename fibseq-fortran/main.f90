@@ -35,10 +35,4 @@ program fib
         write(*, '(" ", I0)') arr(i)
     end do
 
-    deallocate(arr)
-
-    print *, ""
-    print *, "Tap ENTER to exit.."
-    read (*,*)
-
 end program fib
