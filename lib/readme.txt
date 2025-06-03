@@ -1,1 +1,0 @@
-Libraries *borrowed* from MinGW build (https://github.com/niXman/mingw-builds-binaries/releases)
